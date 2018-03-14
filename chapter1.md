@@ -1,14 +1,10 @@
 # 一、Android 资源文件命名与使用
 
-1.
-
-【推荐】
+1.【推荐】
 
 资源文件需带模块前缀。
 
-2.
-
-【推荐】
+2.【推荐】
 
 layout 文件的命名方式。
 
@@ -26,16 +22,11 @@ RecyclerView 的 item layout 以 recycle\_item 开头
 
 GridView 的行 layout 以 grid\_item 开头
 
-  
+模块名\_控件描述\_业务描述词如：
 
+`list_item_orderlist`
 
-模块名\_控件描述\_业务描述词
-
-如：list\_item\_orderlist
-
-3.
-
-【推荐】
+3.【推荐】
 
 drawable
 
@@ -49,7 +40,7 @@ drawable
 
 如:
 
-login\_btn\_pressed, tabs\_icon\_home\_normal
+`login_btn_pressed, tabs_icon_home_normal`
 
 4.
 
@@ -61,7 +52,7 @@ anim资源名称以小写单词+下划线的方式命名，采用以下规则:
 
 frame动画资源:尽可能以模 块+功能命名+序号。如:
 
-loading\_grey\_001
+`loading_grey_001`
 
 5.
 
@@ -71,11 +62,11 @@ color资源使用
 
 \#AARRGGBB格式，写入colors.xml文件中，命名格式采用以下规则:
 
- 以设计规范为准则
+以设计规范为准则
 
-如 
+如
 
-&lt;color name="xxxxx”&gt;\#FF000000&lt;/color&gt;
+`<color name="xxxxx”>#FF000000</color>`
 
 6.
 
@@ -83,7 +74,7 @@ color资源使用
 
 模块名\_描述信息如:
 
-&lt;dimen name="horizontal\_line\_height"&gt;1dp&lt;/dimen&gt;
+`<dimen name="horizontal_line_height">1dp</dimen>`
 
 7.【推荐】
 
@@ -93,11 +84,11 @@ style
 
 父style名称.当前style名称如:
 
-&lt;style name="ParentTheme.ThisActivityTheme”&gt;
+`<style name="ParentTheme.ThisActivityTheme”>`
 
-...
+`...`
 
-&lt;/style&gt;
+`</style>`
 
 8.
 
@@ -111,9 +102,9 @@ strings.xml文件中， 字符串以小写单词+
 
 下划线的方式命名，采用以下规则:
 
-模块名\_逻辑名称 如:
+模块名\_逻辑名称 如:
 
-login\_tips,homepage\_notice\_desc
+`login_tips,homepage_notice_desc`
 
 9.【推荐】
 
@@ -135,23 +126,19 @@ View组件的资源id需要以View的缩写作为 前缀。常用缩写表如下
 | RadioButton | rb |
 | EditText | et |
 
-  
-
-
 其它控件的缩写推荐使用小写字母并用下划线进行分割，
 
 例如: ProgressBar 对应的缩写为 progress\_bar
 
-         DatePicker 对应的缩写为 date\_picker
+```
+     DatePicker 对应的缩写为 date\_picker
+```
 
-  
+10.【推荐】大分辨率图片\(单维度超过1000\)大分辨率图片建议统一放在xxhdpi目录 下管理，否则将导致占用内存成倍数增加。说明 :
 
-
-10.
-
-【推荐】大分辨率图片\(单维度超过1000\)大分辨率图片建议统一放在xxhdpi目录 下管理，否则将导致占用内存成倍数增加。说明 :
-
-        为了支持多种屏幕尺寸和密度，Android
+```
+    为了支持多种屏幕尺寸和密度，Android
+```
 
 为多种屏幕提供不同的资源目录进行适配。 为不同屏幕密度提供不同的位图可绘制对象，可用于密度特定资源的配置限定符\(在
 
@@ -172,10 +159,4 @@ drawable-hdpi/。根据当前的设备屏幕尺寸和密度，将会寻找最匹
 扩展参考:
 
 [https://developer.android.com/guide/practices/screens\_support.html?hl=zh-cn](https://developer.android.com/guide/practices/screens_support.html?hl=zh-cn)
-
-  
-
-
-  
-
 
