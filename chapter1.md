@@ -6,35 +6,31 @@
 
 2.【推荐】
 
-layout 文件的命名方式。
+* layout 文件的命名方式。
 
-Activity 的 layout 以 activity 开头
+* Activity 的 layout 以 activity 开头
 
-Fragment 的 layout 以 fragment 开头
+* Fragment 的 layout 以 fragment 开头
 
-Dialog 的 layout 以 dialog 开头
+* Dialog 的 layout 以 dialog 开头
 
-include 的 layout 以 include 开头
+* include 的 layout 以 include 开头
 
-ListView 的行 layout 以 list\_item 开头
+* ListView 的行 layout 以 list\_item 开头
 
-RecyclerView 的 item layout 以 recycle\_item 开头
+* RecyclerView 的 item layout 以 recycle\_item 开头
 
-GridView 的行 layout 以 grid\_item 开头
+* GridView 的行 layout 以 grid\_item 开头
 
-模块名\_控件描述\_业务描述词如：
+模块名\_控件描述\_业务描述词
+
+如：
 
 `list_item_orderlist`
 
 3.【推荐】
 
-drawable
-
-资源名称以小写单词+下划线的方式命名，根据分辨率不同存放 在不同的
-
-drawable
-
-目录下，建议只使用一套，例如drawable-xhdpi。采用规则如下:
+drawable资源名称以小写单词+下划线的方式命名，根据分辨率不同存放 在不同的drawable目录下，建议只使用一套，例如drawable-xhdpi。采用规则如下:
 
 模块名\_业务功能描述\_控件描述\_控件状态限定词
 
@@ -48,7 +44,9 @@ anim资源名称以小写单词+下划线的方式命名，采用以下规则:
 
 模块名\_逻辑名称\_\[方向\|序号\]
 
-frame动画资源:尽可能以模 块+功能命名+序号。如:
+frame动画资源:尽可能以模 块+功能命名+序号。
+
+如:
 
 `loading_grey_001`
 
